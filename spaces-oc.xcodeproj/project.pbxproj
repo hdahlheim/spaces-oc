@@ -20,11 +20,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		67FFF24326824A8C0047D4A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		67FFF22C26824A5B0047D4A6 /* spaces-oc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "spaces-oc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FFF22F26824A5B0047D4A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67FFF27626824CDF0047D4A6 /* CGSTile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSTile.h; sourceTree = "<group>"; };
+		67FFF27726824CDF0047D4A6 /* CGSSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSSurface.h; sourceTree = "<group>"; };
+		67FFF27826824CDF0047D4A6 /* CGSTransitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSTransitions.h; sourceTree = "<group>"; };
+		67FFF27926824CDF0047D4A6 /* CGSRegion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSRegion.h; sourceTree = "<group>"; };
+		67FFF27A26824CDF0047D4A6 /* CGSWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSWorkspace.h; sourceTree = "<group>"; };
+		67FFF27B26824CDF0047D4A6 /* CGSHotKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSHotKeys.h; sourceTree = "<group>"; };
+		67FFF27C26824CDF0047D4A6 /* CGSAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSAccessibility.h; sourceTree = "<group>"; };
+		67FFF27D26824CDF0047D4A6 /* CGSMisc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSMisc.h; sourceTree = "<group>"; };
+		67FFF27E26824CDF0047D4A6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67FFF27F26824CDF0047D4A6 /* CGSWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSWindow.h; sourceTree = "<group>"; };
+		67FFF28026824CDF0047D4A6 /* CGSCursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSCursor.h; sourceTree = "<group>"; };
+		67FFF28126824CDF0047D4A6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		67FFF28226824CDF0047D4A6 /* CGSDisplays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSDisplays.h; sourceTree = "<group>"; };
+		67FFF28326824CDF0047D4A6 /* CGSInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSInternal.h; sourceTree = "<group>"; };
+		67FFF28426824CDF0047D4A6 /* CGSCIFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSCIFilter.h; sourceTree = "<group>"; };
+		67FFF28526824CDF0047D4A6 /* CGSConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSConnection.h; sourceTree = "<group>"; };
+		67FFF28626824CDF0047D4A6 /* CGSSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSSession.h; sourceTree = "<group>"; };
+		67FFF28726824CDF0047D4A6 /* CGSDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSDevice.h; sourceTree = "<group>"; };
+		67FFF28826824CDF0047D4A6 /* CGSSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSSpace.h; sourceTree = "<group>"; };
+		67FFF28926824CDF0047D4A6 /* CGSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSEvent.h; sourceTree = "<group>"; };
+		67FFF28A26824CDF0047D4A6 /* CGSDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSDebug.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			children = (
 				67FFF22E26824A5B0047D4A6 /* spaces-oc */,
 				67FFF22D26824A5B0047D4A6 /* Products */,
+				67FFF23726824A6C0047D4A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +89,45 @@
 		67FFF22E26824A5B0047D4A6 /* spaces-oc */ = {
 			isa = PBXGroup;
 			children = (
+				67FFF27526824CDF0047D4A6 /* CGSInternal */,
 				67FFF22F26824A5B0047D4A6 /* main.m */,
 			);
 			path = "spaces-oc";
+			sourceTree = "<group>";
+		};
+		67FFF23726824A6C0047D4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67FFF27526824CDF0047D4A6 /* CGSInternal */ = {
+			isa = PBXGroup;
+			children = (
+				67FFF27626824CDF0047D4A6 /* CGSTile.h */,
+				67FFF27726824CDF0047D4A6 /* CGSSurface.h */,
+				67FFF27826824CDF0047D4A6 /* CGSTransitions.h */,
+				67FFF27926824CDF0047D4A6 /* CGSRegion.h */,
+				67FFF27A26824CDF0047D4A6 /* CGSWorkspace.h */,
+				67FFF27B26824CDF0047D4A6 /* CGSHotKeys.h */,
+				67FFF27C26824CDF0047D4A6 /* CGSAccessibility.h */,
+				67FFF27D26824CDF0047D4A6 /* CGSMisc.h */,
+				67FFF27E26824CDF0047D4A6 /* README.md */,
+				67FFF27F26824CDF0047D4A6 /* CGSWindow.h */,
+				67FFF28026824CDF0047D4A6 /* CGSCursor.h */,
+				67FFF28126824CDF0047D4A6 /* .gitignore */,
+				67FFF28226824CDF0047D4A6 /* CGSDisplays.h */,
+				67FFF28326824CDF0047D4A6 /* CGSInternal.h */,
+				67FFF28426824CDF0047D4A6 /* CGSCIFilter.h */,
+				67FFF28526824CDF0047D4A6 /* CGSConnection.h */,
+				67FFF28626824CDF0047D4A6 /* CGSSession.h */,
+				67FFF28726824CDF0047D4A6 /* CGSDevice.h */,
+				67FFF28826824CDF0047D4A6 /* CGSSpace.h */,
+				67FFF28926824CDF0047D4A6 /* CGSEvent.h */,
+				67FFF28A26824CDF0047D4A6 /* CGSDebug.h */,
+			);
+			path = CGSInternal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +140,7 @@
 				67FFF22826824A5B0047D4A6 /* Sources */,
 				67FFF22926824A5B0047D4A6 /* Frameworks */,
 				67FFF22A26824A5B0047D4A6 /* CopyFiles */,
+				67FFF24326824A8C0047D4A6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +308,7 @@
 		67FFF23426824A5B0047D4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +317,7 @@
 		67FFF23526824A5B0047D4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CGSInternal/CGSConnection.h"
+#import "CGSInternal/CGSSpace.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+
+    fprintf(stdout, "%zu\n", CGSGetActiveSpace(CGSMainConnectionID()));
+    fflush(stdout);
     return 0;
 }
